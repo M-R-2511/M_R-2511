@@ -58,7 +58,7 @@ function getName() {
   heading3ById.innerHTML = `Thank you (${localStorage.name})`;
   heading3.show(2000);
   let done = $("#done");
-  done.slideUp(2000);
+  done.slideUp();
 }
 
 // // Start Button
