@@ -54,11 +54,13 @@ function getName() {
   if (user_name.value != "") {
     sessionStorage.name = user_name.value;
   }
-  user_name.value = "";
+  if(sessionStorage.name != null) {
+    user_name.value = "";
   heading3ById.innerHTML = `Thank you (${sessionStorage.name})`;
   heading3.show(2000);
   let done = $("#done");
   done.slideUp(2000);
+  }
 }
 
 // // Start Button
