@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JQuery</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="hello">
+          Hello!<br />
+          I am <span>M_R 2511</span>
+        </h1>
+      </header>
+      <main>
+        <div class="asking">
+          <h2 class="ask">Do you want to speak with me ?</h2>
+          <button id="yes" onclick="answer(this.id)">Yes</button>
+          <button id="no" onclick="answer(this.id)">No</button>
+        </div>
+        <!-- Case No -->
+        <!-- <div>
+          <h1 id="oops">
+            OOPS ! :( <br />
+            Good bye
+          </h1>
+        </div> -->
+
+        <!-- Case Yes -->
+        <div class="yesClicked">
+          <h1 class="main-heading1">
+            I am so happy for talking with you .... <br /><span
+              >oh Sorry !</span
+            >
+          </h1>
+          <h2 class="main-heading2">
+            Can you tell me your name pls :)
+            <div>
+              <input value="" id="user" type="text" placeholder="Enter your Name" />
+              <button id="done" onclick="getName()">Done</button>
+            </div>
+          </h2>
+          <h3 id="headding3" class="main-heading3"></h3>
+        <!-- <h1 class="main-heading1">I will show you where can you go :)</h1>
+				<h2 class="main-heading2">Can you Choose a website to go there</h2> -->
+        <!-- </div> -->
+      </main>
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

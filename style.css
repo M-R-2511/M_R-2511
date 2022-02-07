@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+  color: #fff;
+}
+body {
+  background-color: #222;
+}
+.container {
+  width: 90%;
+  margin: 50px auto;
+  overflow: hidden;
+  /* height: 80vh; */
+  text-align: center;
+}
+header h1 {
+  letter-spacing: 5px;
+  font-size: 60px;
+  line-height: 85px;
+}
+header h1 span {
+  color: #008698;
+}
+main {
+  margin-top: 50px;
+  text-align: center;
+}
+main .ask {
+  font-size: 50px;
+}
+main button {
+  padding: 15px 60px;
+  font-size: 40px;
+  border: 1px solid #fff;
+  margin: 40px 60px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 20px;
+}
+main button:hover {
+  background-color: #fff;
+  color: #333;
+  transition: 0.6s;
+}
+
+h1,
+h2 {
+  letter-spacing: 5px;
+}
+
+main #oops {
+  font-size: 50px;
+  margin: 150px auto;
+  font-size: 4em;
+}
+main .main-heading1 {
+  font-size: 50px;
+  margin: 60px auto;
+}
+main .main-heading1 span {
+  color: red;
+}
+main .main-heading2 {
+  font-size: 50px;
+}
+main input {
+  margin: 40px;
+  padding: 12px;
+  min-width: 15%;
+  border: none;
+  text-align: center;
+  outline: none;
+  background-color: transparent;
+  font-size: 30px;
+}
+main input:active,
+input:focus {
+  outline: none;
+}
+main .main-heading3 {
+  font-size: 30px;
+  color: #008668;
+}
+#done {
+  padding: 5px 30px;
+  font-size: 25px;
+}
