@@ -45,10 +45,7 @@ main button:hover {
   transition: 0.6s;
 }
 
-h1,
-h2 {
-  letter-spacing: 5px;
-}
+c
 
 main #oops {
   font-size: 50px;
@@ -109,5 +106,9 @@ main .main-heading3 {
     margin: 20px auto;
     font-size: 20px;
     margin-bottom: 0;
+  }
+  h1,
+  h2 {
+  letter-spacing: 3px;
   }
 }
