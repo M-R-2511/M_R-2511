@@ -19,8 +19,6 @@ $(document).ready(function () {
   heading2.hide();
   heading3.hide();
   // Output UserName
-  if (localStorage.user_name != null) {
-  }
 });
 
 // When Answer
@@ -35,7 +33,7 @@ function answer(id) {
     main.append(oops);
     setTimeout(() => {
       location.assign("https://www.google.com");
-    }, 2000);
+    }, 3000);
   }
   // Answer is Yes
   else {
@@ -45,7 +43,6 @@ function answer(id) {
 
     setTimeout(() => {
       heading2.slideDown(3000);
-      user_name.focus();
     }, 4000);
   }
 }
