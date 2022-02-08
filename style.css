@@ -12,7 +12,7 @@ body {
   width: 90%;
   margin: 50px auto;
   overflow: hidden;
-  /* height: 80vh; */
+  min-height: 60vh;
   text-align: center;
 }
 header h1 {
@@ -30,19 +30,16 @@ main {
 main .ask {
   font-size: 50px;
 }
-main button {
-  padding: 15px 60px;
-  font-size: 40px;
-  border: 1px solid #fff;
-  margin: 40px 60px;
-  background-color: transparent;
-  cursor: pointer;
+main #yes,
+#no,
+#done {
+  font-size: 30px;
+  padding: 8px 25px;
   border-radius: 20px;
+  margin: 30px;
 }
 main button:hover {
-  background-color: #fff;
-  color: #333;
-  transition: 0.6s;
+  transition: 0.7s;
 }
 
 h1,
@@ -55,61 +52,93 @@ main #oops {
   margin: 150px auto;
   font-size: 4em;
 }
-main .main-heading1 {
-  font-size: 50px;
+main .main-heading1,
+.main-heading4 {
+  font-size: 70px;
   margin: 60px auto;
 }
 main .main-heading1 span {
   color: red;
 }
-main .main-heading2 {
+main .main-heading2,
+.main-heading5 {
   font-size: 50px;
 }
 main input {
-  margin: 40px;
+  margin: 40px auto;
   padding: 12px;
-  min-width: 15%;
   border: none;
   text-align: center;
   outline: none;
   background-color: transparent;
-  font-size: 30px;
+  font-size: 25px;
   overflow: auto;
 }
 main input:active,
 input:focus {
   outline: none;
 }
+label {
+  font-size: 30px;
+  margin: 15px auto;
+  cursor: pointer;
+}
+#male,
+#female {
+  margin: 15px auto;
+  padding: 8px;
+  cursor: pointer;
+}
 main .main-heading3 {
   margin-top: 30px;
   font-size: 25px;
   color: #008668;
 }
-#done {
-  padding: 5px 30px;
-  font-size: 25px;
+.row {
+  margin-top: 50px;
+}
+.col {
+  cursor: pointer;
+  background-color: #20333E;
+  height: 150px;
+  margin: 15px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  transition: 0.7s;
+  font-size: 30px;
+}
+.col:hover {
+  border-radius: 50%;
+  transform: rotate(360deg);
+  background-color: #011627;
+}
+.col a {
+  color: #F1FAEE;
+}
+.col:hover a {
+  color: #008698;
+}
+a {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
   header h1,
-  main .main-heading1 {
+  main .main-heading1,
+  .main-heading4 {
     line-height: 50px;
-    font-size: 30px;
+    font-size: 35px;
   }
   main .ask,
-  main .main-heading2 {
-    font-size: 25px;
+  main .main-heading2,
+  .main-heading5 {
+    font-size: 30px;
   }
   main button {
     font-size: 20px;
     padding: 15px 25px;
     margin: 50px 20px;
-  }
-  main input {
-    width: 90%;
-    margin: 20px auto;
-    font-size: 20px;
-    margin-bottom: 0;
   }
   h1,
   h2 {
