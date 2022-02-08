@@ -18,7 +18,9 @@ $(document).ready(function () {
   heading1.hide();
   heading2.hide();
   heading3.hide();
-  // Output UserName
+  heading4.hide();
+  heading5.hide();
+  links.hide();
 });
 
 // When Answer
@@ -47,20 +49,49 @@ function answer(id) {
   }
 }
 
+// Seaction 2
 let user_name = document.getElementById("user");
 let heading3 = $(".main-heading3");
-let heading3ById = document.getElementById("headding3");
+let heading3ById = document.getElementById("heading3");
+let male = document.getElementById("male");
+let female = document.getElementById("female");
 function getName() {
   if (user_name.value != "") {
     sessionStorage.name = user_name.value;
   }
-  if (sessionStorage.name != null) {
+  if ((sessionStorage.name != null && male.checked) || female.checked) {
     user_name.value = "";
-    heading3ById.innerHTML = `Thank you (${sessionStorage.name})`;
-    heading3.show(2000);
+    if (male.checked) {
+      heading3ById.innerHTML = `Thank you Mr(${sessionStorage.name})`;
+    } else {
+      heading3ById.innerHTML = `Thank you Mrs(${sessionStorage.name})`;
+    }
+    sessionStorage.clear();
     let inputName = $(".getName");
     inputName.slideUp(2000);
+    heading1.fadeOut(2000);
+    heading2.slideUp(2000);
   }
+
+  // Seaction 3
+  setTimeout(() => {
+    heading3.show(2000);
+  }, 3000);
+  setTimeout(() => {
+    heading3.hide();
+    doneClicked();
+  }, 6000);
+}
+
+let heading4 = $(".main-heading4");
+let heading5 = $(".main-heading5");
+let links = $(".row");
+function doneClicked() {
+  heading4.fadeIn(3000);
+  setTimeout(() => {
+    heading5.slideDown(2000);
+    links.show(3000);
+  }, 3000);
 }
 
 // // Start Button
